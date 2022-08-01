@@ -1,0 +1,198 @@
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////
+      This Project (Binsoft) Was Made by Programmer Patrick Paul....
+      And all codes are written under a carefull super-version of him..... 
+      For Contacts email The Programmer (Patrick Paul) at :- patrickpaul367@gmail.com or
+                                                             patrickshao367@gmail.com
+                          THANK YOU FOR READING..... :)
+////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="machines\binSoft.css" />
+    <title>BinSoft #Microsoft</title>
+  </head>
+  <body id="body">
+    <div id="collector">
+      <header>
+        <img class="logo1" src="icons\binSoft.png" title="App Made By Patric" />
+        <h2>BinSoft</h2>
+        <img class="logo2" src="icons\about.png" onclick="Alert.render('BinSoft was created to combine the idea of simulating beautiful colors and sweet music tunes. <br><br> Hovering on any of the four circles offers that cool trick! <br><br> Clicking any of the circles will give out more info about a specific color and affect the entire app!')"/>
+      </header>
+  
+      <main>
+        <div id="beggin_world">
+          <img
+            src="icons/power.png"
+            title="Let's Beggin"
+            onclick="document.getElementById('beggin_world').style.display = 'none'"
+            class="beggin"
+          />
+        </div>
+        <div class="container">
+          <div
+            class="circle"
+            id="one"
+            onmouseover="setTimeout(expandCircle, 150, 'one' , 'img1')"
+            onmouseout="restoreCircle('one' , 'img1')"
+            onclick="backgroundChanger()"
+          >
+            <img src="icons\hover.png" id="img1" />
+          </div>
+          <div
+            class="circle"
+            id="two"
+            onmouseover="setTimeout(expandCircle, 150, 'two' , 'img2')"
+            onmouseout="restoreCircle('two' , 'img2')"
+            onclick="backgroundChanger()"
+          >
+            <img src="icons\hover.png" id="img2" />
+          </div>
+          <br />
+          <span class="emoji" id="emo">&#128512;</span>
+          <br />
+          <div
+            class="circle"
+            id="three"
+            onmouseover="setTimeout(expandCircle, 150, 'three' , 'img3')"
+            onmouseout="restoreCircle('three' , 'img3')"
+            onclick="backgroundChanger()"
+          >
+            <img src="icons\hover.png" id="img3" />
+          </div>
+          <div
+            class="circle"
+            id="four"
+            onmouseover="setTimeout(expandCircle, 150, 'four' , 'img4')"
+            onmouseout="restoreCircle('four' , 'img4')"
+            onclick="backgroundChanger()"
+          >
+            <img src="icons\hover.png" id="img4" />
+          </div>
+        </div>
+      </main>
+      <div class="container_sections">
+        <section class="setting">
+          <div class="volume" id="volume">
+            <img src="icons\vol1.png" alt="volume" title="Sound On" id="sound" onclick="mute()"/>
+          </div>
+          <div class="power">
+            <a href="BinSoft.html"><img src="icons\power.png" alt="power" title="Power Off" /></a>
+          </div>
+        </section>
+        <hr />
+        <section class="identity">
+          <div id="name"><span id="color_name">Color Name</span></div>
+          <div id="hex"><span id="color_id">Color Id</span></div>
+        </section>
+      </div>
+      <footer>
+        <span>Powered By </span>
+        <a href="https://www.microsoft.com/" target="_blank"><img src="icons/microsoft.png" alt="microsoft logo" /></a>
+      </footer>
+      <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+          <div>
+            <div id="dialogboxhead"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="displayer">
+      <p>
+        Oooh! It Looks Like You Have A smaller display Screen!!!
+        <br />
+        This Software works only in 15.6 Inch Screen and Above!!!
+        <br />
+        Sorry... :(
+        <br />
+        <br />
+        NOTE:
+        <br />
+        If Your Screen Is 15.6 Inch Or Above And Your Getting This Error....
+        <br />
+        Try To Maximaize Your Windows!!!
+        <br />
+        Or Resize It By Icreasing Its Size In Both Height & Width!!!
+      </p>
+    </div>
+  </div>
+    <audio id="1">
+    <source src="sounds\1.mp3" type="audio/mp3">
+  </audio>
+  <audio id="2">  
+    <source src="sounds\2.mp3" type="audio/mp3">
+  </audio>
+  <audio id="3">  
+    <source src="sounds\3.mp3" type="audio/mp3">
+  </audio>
+  <audio id="4">  
+    <source src="sounds\4.mp3" type="audio/mp3">
+  </audio>
+  <audio id="5">  
+    <source src="sounds\5.mp3" type="audio/mp3">
+  </audio>
+  <audio id="6">  
+    <source src="sounds\6.mp3" type="audio/mp3">
+  </audio>
+  <audio id="7">  
+    <source src="sounds\7.mp3" type="audio/mp3">
+  </audio>
+  <audio id="8">  
+    <source src="sounds\8.mp3" type="audio/mp3">
+  </audio>
+  <audio id="9">  
+    <source src="sounds\9.mp3" type="audio/mp3">
+  </audio>
+  <audio id="10">  
+    <source src="sounds\10.mp3" type="audio/mp3">
+  </audio>
+  <audio id="11">  
+    <source src="sounds\11.mp3" type="audio/mp3">
+  </audio>
+  <audio id="12">  
+    <source src="sounds\12.mp3" type="audio/mp3">
+  </audio>
+  <audio id="13">  
+    <source src="sounds\13.mp3" type="audio/mp3">
+  </audio>
+  <audio id="14">  
+    <source src="sounds\14.mp3" type="audio/mp3">
+  </audio>
+  <audio id="15">  
+    <source src="sounds\15.mp3" type="audio/mp3">
+  </audio>
+  <audio id="16">  
+    <source src="sounds\16.mp3" type="audio/mp3">
+  </audio>
+  <audio id="17">  
+    <source src="sounds\17.mp3" type="audio/mp3">
+  </audio>
+  <audio id="18">  
+    <source src="sounds\18.mp3" type="audio/mp3">
+  </audio>
+  <audio id="19">  
+    <source src="sounds\19.mp3" type="audio/mp3">
+  </audio>
+  <audio id="20">  
+    <source src="sounds\20.mp3" type="audio/mp3">
+  </audio>
+  <audio id="21">  
+    <source src="sounds\21.mp3" type="audio/mp3">
+  </audio>
+  <audio id="22">  
+    <source src="sounds\22.mp3" type="audio/mp3">
+  </audio>
+  <audio id="23">  
+    <source src="sounds\23.mp3" type="audio/mp3">
+  </audio>
+  <audio id="24">  
+    <source src="sounds\24.mp3" type="audio/mp3">
+  </audio>  
+    <script type="text/javascript" src="machines\BinSoft.js"></script>
+  </body>
+</html>
